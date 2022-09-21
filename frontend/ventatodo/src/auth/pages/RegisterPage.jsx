@@ -4,70 +4,74 @@ export const RegisterPage = () => {
 
     return (
 
-        <div className="container mt-5">
-            <form>
-                <div className="text-center mb-3">
-                    <p>Sign up with:</p>
-                    <button type="button" className="btn btn-link btn-floating mx-1">
-                        <i className="fab fa-facebook-f"></i>
+        <section className="vh-100 gradient-custom">
+        <div className="container py-5 h-100">
+            <div className="row d-flex justify-content-center align-items-center h-100">
+            <div className="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div className="card bg-dark text-white">
+                <div className="card-body p-5 text-center">
+                    <div className="mb-md-5 mt-md-4 pb-5">
+                    <h2 className="fw-bold mb-2 text-uppercase">
+                        Crea una cuenta
+                    </h2>
+                    <p className="text-white-50 mb-5">
+                        Ingresa tus datos
+                    </p>
+                    <div className="form-outline form-white mb-4">
+                        <input
+                        type="email"
+                        className="form-control form-control-lg"
+                        />
+                        <label className="form-label">Nombre de usuario</label>
+                    </div>
+
+
+                    <div className="form-outline form-white mb-4">
+                        <input
+                        type="email"
+                        className="form-control form-control-lg"
+                        />
+                        <label className="form-label">Correo Electrónico</label>
+                    </div>
+
+                    <div className="form-outline form-white mb-4">
+                        <input
+                        type="password"
+                        className="form-control form-control-lg"
+                        />
+                        <label className="form-label">Contraseña</label>
+                    </div>
+
+                    <div className="form-outline form-white mb-4">
+                        <input
+                        type="password"
+                        className="form-control form-control-lg"
+                        />
+                        <label className="form-label">Confirmar contraseña</label>
+                    </div>
+
+                    <button
+                        className="btn btn-outline-light btn-lg px-5"
+                        type="submit"
+                    >
+                        Registrarse
                     </button>
-            
-                    <button type="button" className="btn btn-link btn-floating mx-1">
-                        <i className="fab fa-google"></i>
-                    </button>
-            
-                    <button type="button" className="btn btn-link btn-floating mx-1">
-                        <i className="fab fa-twitter"></i>
-                    </button>
-            
-                    <button type="button" className="btn btn-link btn-floating mx-1">
-                        <i className="fab fa-github"></i>
-                    </button>
+                    </div>
+
+                    <div>
+                    <p className="mb-0">
+                        Ya tiene cuenta?{" "}
+                        <a href="#!" className="text-white-50 fw-bold">
+                        Iniciar sesión
+                        </a>
+                    </p>
+                    </div>
                 </div>
-            
-                <p className="text-center">or:</p>    
-                
-                <div className="form-outline mb-4">
-                    <input type="text" className="form-control" />
-                    <label className="form-label" >Name</label>
                 </div>
-            
-                
-                <div className="form-outline mb-4">
-                    <input type="text" className="form-control" />
-                    <label className="form-label">Username</label>
-                </div>
-            
-                
-                <div className="form-outline mb-4">
-                    <input type="email" className="form-control" />
-                    <label className="form-label" >Email</label>
-                </div>
-            
-                
-                <div className="form-outline mb-4">
-                    <input type="password" className="form-control" />
-                    <label className="form-label" >Password</label>
-                </div>
-            
-                
-                <div className="form-outline mb-4">
-                    <input type="password" className="form-control" />
-                    <label className="form-label" >Repeat password</label>
-                </div>
-            
-                
-                <div className="form-check d-flex justify-content-center mb-4">
-                    <input className="form-check-input me-2" type="checkbox" value="" id="registerCheck" />
-                    <label className="form-check-label">
-                    I have read and agree to the terms
-                    </label>
-                </div>
-            
-                
-                <button type="submit" className="btn btn-primary btn-block mb-3">Sign in</button>
-            </form>
+            </div>
+            </div>
         </div>
+        </section>
     )
 
 }
