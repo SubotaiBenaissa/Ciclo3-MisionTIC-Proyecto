@@ -5,9 +5,9 @@ export const LoginPage = () => {
 
     const navigate = useNavigate();
 
-    //const onLogIn = () => {
-    //    navigate('/register')
-    //}
+    const onLogIn = () => {
+        navigate('/')
+    }
 
     return (
 
@@ -44,6 +44,7 @@ export const LoginPage = () => {
                     <button
                         className="btn btn-outline-light btn-lg px-5"
                         type="submit"
+                        onClick={ onLogIn }
                     >
                         Ingresar
                     </button>
