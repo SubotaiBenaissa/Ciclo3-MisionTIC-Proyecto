@@ -1,10 +1,17 @@
 import React from "react";
+import { useNavigate, Link } from 'react-router-dom'
 
 export const LoginPage = () => {
 
+    const navigate = useNavigate();
+
+    //const onLogIn = () => {
+    //    navigate('/register')
+    //}
+
     return (
 
-        <section className="vh-100 gradient-custom">
+        <section className="vh-100 gradient-custom div-main">
         <div className="container py-5 h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -45,9 +52,9 @@ export const LoginPage = () => {
                     <div>
                     <p className="mb-0">
                         No tiene cuenta?{" "}
-                        <a href="#!" className="text-white-50 fw-bold">
-                        Registrarse
-                        </a>
+                        <Link className="text-white-50 fw-bold" to="/register">
+                            Registrarse
+                        </Link>
                     </p>
                     </div>
                 </div>

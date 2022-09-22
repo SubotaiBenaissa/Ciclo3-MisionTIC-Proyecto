@@ -1,10 +1,18 @@
 import React from 'react'
+import { useNavigate, Link } from 'react-router-dom'
+import '../styles/styles.css'
 
 export const RegisterPage = () => {
 
+    const navigate = useNavigate();
+
+    const onRegister = () => {
+        navigate('/login');
+    }
+
     return (
 
-        <section className="vh-100 gradient-custom">
+        <section className="vh-100 gradient-custom div-main">
         <div className="container py-5 h-100">
             <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -53,6 +61,7 @@ export const RegisterPage = () => {
                     <button
                         className="btn btn-outline-light btn-lg px-5"
                         type="submit"
+                        onClick={ onRegister }
                     >
                         Registrarse
                     </button>
@@ -61,9 +70,9 @@ export const RegisterPage = () => {
                     <div>
                     <p className="mb-0">
                         Ya tiene cuenta?{" "}
-                        <a href="#!" className="text-white-50 fw-bold">
-                        Iniciar sesión
-                        </a>
+                        <Link className="text-white-50 fw-bold" to="/login">
+                            Iniciar sesión
+                        </Link>
                     </p>
                     </div>
                 </div>
