@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from Productos.router import routerProducto
 from Usuarios.router import routerUsuario
+from Categoria.router import routerCategoria
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(routerProducto.urls)),
-    path('api/', include(routerUsuario.urls))
+    path('api/', include(routerUsuario.urls)),
+    path('api/', include(routerCategoria.urls))
 ]

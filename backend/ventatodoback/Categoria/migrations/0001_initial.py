@@ -12,22 +12,16 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Usuarios',
+            name='Categoria',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(max_length=45)),
-                ('apellido', models.CharField(max_length=45)),
-                ('fecha_nacimiento', models.DateField()),
-                ('telefono', models.CharField(max_length=10)),
-                ('correo', models.EmailField(max_length=254, unique=True)),
-                ('direccion', models.CharField(max_length=40)),
-                ('ciudad', models.CharField(max_length=45)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now_add=True)),
             ],
             options={
-                'verbose_name': 'Usuario',
-                'verbose_name_plural': 'Usuarios',
+                'verbose_name': 'Categoria',
+                'verbose_name_plural': 'Categorias',
             },
         ),
     ]
