@@ -1,13 +1,14 @@
 import React from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { FooterComponent, NavbarComponent } from '../../ui'
 import { ProductPage, ProductsPage } from '../pages'
+import '../styles/styles.css'
 
 export const VentasRouter = () => {
 
     return (
         
-        <>
+        <div className="div-background">
             <NavbarComponent />
             <div className="container">
                 <Routes>
@@ -16,7 +17,7 @@ export const VentasRouter = () => {
                 </Routes>
             </div>
             <FooterComponent />
-        </>
+        </div>
 
     )
 
