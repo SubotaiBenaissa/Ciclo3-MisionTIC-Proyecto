@@ -1,18 +1,11 @@
 from django.db import models
-
+from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
-class Usuarios(models.Model):
+class Usuarios(AbstractUser):
     
-    nombre = models.CharField(max_length=45)
-    apellido = models.CharField(max_length=45)
-    fecha_nacimiento = models.DateField()
-    telefono = models.CharField(max_length=10)
-    correo = models.EmailField(unique=True)
-    direccion = models.CharField(max_length=40)
-    ciudad = models.CharField(max_length=45)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
+    username = models.CharField(max_length=45, unique=True)
+    email = models.EmailField()
     
     class Meta: 
         
@@ -21,4 +14,4 @@ class Usuarios(models.Model):
         
     def __str__(self):
         
-        return self.nombre
+        return self.username

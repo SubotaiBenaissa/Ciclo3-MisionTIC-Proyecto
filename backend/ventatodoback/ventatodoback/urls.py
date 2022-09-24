@@ -19,7 +19,6 @@ from django.urls import path
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from Productos.router import routerProducto
-from Usuarios.router import routerUsuario
 from Categoria.router import routerCategoria
 
 schema_view = get_schema_view(
@@ -35,7 +34,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redocs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('api/', include('Usuarios.urls')),
     path('api/', include(routerProducto.urls)),
-    path('api/', include(routerUsuario.urls)),
-    path('api/', include(routerCategoria.urls))
+    path('api/', include(routerCategoria.urls)),
 ]
