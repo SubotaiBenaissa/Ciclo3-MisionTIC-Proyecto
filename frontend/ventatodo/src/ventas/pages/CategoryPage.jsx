@@ -13,7 +13,7 @@ export const CategoryPage = () => {
             setCategorias(response.data)
         })
 
-    }, [setCategorias]);
+    }, [categorias]);
 
     return (
         

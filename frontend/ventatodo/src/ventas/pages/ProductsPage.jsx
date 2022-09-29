@@ -14,7 +14,7 @@ export const ProductsPage = () => {
             setProductos(response.data)
         })
 
-    }, [setProductos]);
+    }, [productos]);
 
     return (
         
