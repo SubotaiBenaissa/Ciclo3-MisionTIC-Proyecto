@@ -1,7 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const ProductComponent = () => {
+export const ProductComponent = ({ 
+    id,
+    nombre,
+    descripcion,
+    precio,
+    ciudad,
+    cantidad_unidades,
+    usuario,
+    categoria
+ }) => {
 
     return (
         
@@ -14,9 +23,10 @@ export const ProductComponent = () => {
                         </div>
                         <div className="col-8">
                             <div className="card-body">
-                                <h4 className="card-title">Titulo producto</h4>
-                                <p className="card-text">Categoría producto</p>
-                                <p className="card-text">Descripción pequeña</p>
+                                <h4 className="card-title">{ nombre }</h4>
+                                <p className="card-text"> { descripcion } </p>
+                                <p className="card-text">{ ciudad }</p>
+                                <p className="card-text">${ precio }</p>
                                 <Link to={'#'}>Ver producto</Link>
                             </div>
                         </div>
