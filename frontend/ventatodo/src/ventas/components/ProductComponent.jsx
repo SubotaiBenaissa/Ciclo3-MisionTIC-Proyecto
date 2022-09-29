@@ -13,28 +13,27 @@ export const ProductComponent = ({
  }) => {
 
     return (
-        
-        <div className="row rows-cols-1 row-cols-md-3 g-3 mb-3">
-            <div className="col">
-                <div className="card animate__animated animate__fadeIn">
-                    <div className="row no-gutters">
-                        <div className="col-4">
-                            <img src="https://www.eoi.es/blogs/juanadoricelcepeda/files/2012/01/im1.jpg" alt="Producto" className="card-img" />
-                        </div>
-                        <div className="col-8">
-                            <div className="card-body">
-                                <h4 className="card-title">{ nombre }</h4>
-                                <p className="card-text"> { descripcion } </p>
-                                <p className="card-text">{ ciudad }</p>
-                                <p className="card-text">{ cantidad_unidades } disponibles</p>
-                                <p className="card-text">${ precio } por unidad</p>
-                                <Link to={'#'}>Ver producto</Link>
-                            </div>
+              
+        <div className="col">
+            <div className="card animate__animated animate__fadeIn">
+                <div className="row no-gutters">
+                    <div className="col-4">
+                        <img src="https://www.eoi.es/blogs/juanadoricelcepeda/files/2012/01/im1.jpg" alt="Producto" className="card-img" />
+                    </div>
+                    <div className="col-8">
+                        <div className="card-body">
+                            <h4 className="card-title">{ nombre }</h4>
+                            <p className="card-text"> { descripcion } </p>
+                            <p className="card-text">{ ciudad }</p>
+                            <p className="card-text">{ cantidad_unidades } disponibles</p>
+                            <p className="card-text">${ precio } por unidad</p>
+                            <Link to={'#'}>Ver producto</Link>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     )
     
 }

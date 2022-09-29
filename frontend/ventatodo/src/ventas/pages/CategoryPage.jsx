@@ -17,15 +17,17 @@ export const CategoryPage = () => {
 
     return (
         
-        <>
+        <section className="vh-100 gradient-custom">
             <h1 className="mt-4">Categorias</h1>
             <hr />
-            {
-                categorias.map( (categs) => (
-                    <CategoryComponent key={categs.id} {...categs}/>
-                ) )
-            }
-        </>
+            <div className="row rows-cols-1 row-cols-md-3 g-3 mb-3">
+                {
+                    categorias.map( (categs) => (
+                        <CategoryComponent key={categs.id} {...categs}/>
+                    ) )
+                }
+            </div>
+        </section>
 
     )
 

@@ -18,15 +18,17 @@ export const ProductsPage = () => {
 
     return (
         
-        <>
+        <section className="vh-100 gradient-custom">
             <h1 className="mt-4">Productos</h1>
             <hr />
-            {
-                productos.map( (prod) => (
-                    <ProductComponent key={prod.id} {...prod}/>
-                ))
-            }
-        </>
+            <div className="row rows-cols-1 row-cols-md-3 g-3 mb-3">
+                {
+                    productos.map( (prod) => (
+                        <ProductComponent key={prod.id} {...prod}/>
+                    ))
+                }
+            </div>
+        </section>
 
     )
     
