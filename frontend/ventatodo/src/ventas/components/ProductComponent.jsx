@@ -26,7 +26,8 @@ export const ProductComponent = ({
                                 <h4 className="card-title">{ nombre }</h4>
                                 <p className="card-text"> { descripcion } </p>
                                 <p className="card-text">{ ciudad }</p>
-                                <p className="card-text">${ precio }</p>
+                                <p className="card-text">{ cantidad_unidades } disponibles</p>
+                                <p className="card-text">${ precio } por unidad</p>
                                 <Link to={'#'}>Ver producto</Link>
                             </div>
                         </div>
