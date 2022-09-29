@@ -10,7 +10,7 @@ export const CategoryComponent = ({ id, nombre }) => {
             <div className="card animate__animated animate__fadeIn">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3843/3843517.png" alt="Producto" className="card-img" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/3843/3843517.png" alt="Categoria" className="card-img" />
                     </div>
                     <div className="col-8">
                         <div className="card-body">
