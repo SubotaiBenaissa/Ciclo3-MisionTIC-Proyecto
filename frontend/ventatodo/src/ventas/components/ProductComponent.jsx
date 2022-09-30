@@ -18,7 +18,7 @@ export const ProductComponent = ({
             <div className="card animate__animated animate__fadeIn">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        <img src="https://www.eoi.es/blogs/juanadoricelcepeda/files/2012/01/im1.jpg" alt="Producto" className="card-img" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/1312/1312307.png" alt="Producto" className="card-img" />
                     </div>
                     <div className="col-8">
                         <div className="card-body">

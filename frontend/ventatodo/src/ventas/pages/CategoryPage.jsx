@@ -13,11 +13,11 @@ export const CategoryPage = () => {
             setCategorias(response.data)
         })
 
-    }, [categorias]);
+    }, [setCategorias]);
 
     return (
         
-        <section className="vh-100 gradient-custom">
+        <section className="mt-auto vh-100 gradient-custom">
             <h1 className="mt-4">Categorias</h1>
             <hr />
             <div className="row rows-cols-1 row-cols-md-3 g-3 mb-3">
