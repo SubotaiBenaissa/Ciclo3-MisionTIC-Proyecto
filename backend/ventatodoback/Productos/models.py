@@ -1,4 +1,3 @@
-from tkinter import CASCADE
 from django.db import models
 from Usuarios.models import Usuarios
 from Categoria.models import Categoria
