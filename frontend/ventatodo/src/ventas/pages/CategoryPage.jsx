@@ -8,7 +8,7 @@ export const CategoryPage = () => {
 
     useEffect( () => {
 
-        Axios.get("http://127.0.0.1:8000/api/categoria/")
+        Axios.get("https://venta-todo-api.herokuapp.com/api/categoria/")
         .then(response => {
             setCategorias(response.data)
         })

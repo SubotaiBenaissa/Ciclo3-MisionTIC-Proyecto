@@ -9,7 +9,7 @@ export const ProductsPage = () => {
 
     useEffect( () => {
 
-        Axios.get("http://127.0.0.1:8000/api/productos/")
+        Axios.get("https://venta-todo-api.herokuapp.com/api/productos/")
         .then(response => {
             setProductos(response.data)
         })
